@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"
+          href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="icon"
+          href="../static/images/favicon.png"
+          th:href="${'images/favicon.png'}"/>
+    <title>Výchozí webová stránka | Java 2</title>
+</head>
+<body>
+    <div class="page">
+        <!--/*@thymesVar id="pocetSpravnychOdpovedi" type="java.lang.Integer"*/-->
+
+
+        <h1>Vysledky</h1>
+
+        <h2>Získal jsi <span th:text="${pocetSpravnychOdpovedi}">0</span> z 8 možných bodů.</h2>
+
+    </div>
+</body>
+</html>
